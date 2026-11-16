@@ -283,3 +283,41 @@ footer p+p{margin-top:8px}
   .links a.cta{margin-top:6px;padding:9px 18px}
 }
 @media (max-width:420px){.stats{grid-template-columns:1fr}}
+
+/* experience journey panels */
+.xp-intro{font-family:var(--serif);font-size:20px;line-height:1.4;color:var(--cream);max-width:60ch;margin-bottom:20px}
+.xp-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:14px}
+.panel{border:1px solid rgba(246,238,223,.2);border-radius:20px;padding:20px 22px;background:rgba(255,255,255,.04)}
+.panel.wide{grid-column:1/-1}
+.panel h4{margin:0 0 12px;font-size:13px;letter-spacing:.07em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:10px}
+.panel h4 span{width:24px;height:24px;border-radius:50%;background:var(--gold);color:var(--ink);display:grid;place-items:center;font-size:13px;letter-spacing:0}
+.panel .tags{margin-top:0}
+.panel .tag{font-size:14.5px;padding:6px 14px;opacity:1}
+.xp .body .panel li:last-child{margin-bottom:0}
+.panel.next{background:var(--gold);border-color:var(--gold);color:var(--ink)}
+.panel.next h4{color:var(--wine-deep)}
+.panel.next h4 span{background:var(--ink);color:var(--gold)}
+.panel.next p{font-size:18px;line-height:1.5;max-width:70ch}
+
+/* skills page */
+.sk-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.sk-grid.three{grid-template-columns:repeat(3,1fr)}
+.sk{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:20px;transition:transform .2s,box-shadow .2s,background .2s}
+.sk:hover{transform:translateY(-5px) rotate(-1deg);box-shadow:0 14px 28px rgba(84,18,22,.14)}
+.sk h3{font-size:21px;font-weight:600}
+.sk p{font-size:14.5px;color:var(--muted);margin-top:8px;line-height:1.45}
+.sk.glass{background:rgba(255,255,255,.06);border-color:rgba(246,238,223,.28)}
+.sk.glass:hover{background:rgba(255,255,255,.12)}
+.sk.glass p{color:rgba(246,238,223,.8)}
+.sk.outline{background:transparent;border:1.5px solid var(--ink)}
+.sk.outline:hover{background:var(--gold)}
+.sk.outline:hover p{color:var(--ink)}
+.page-hero .chips a{text-decoration:none}
+.page-hero .chips li:hover{background:var(--gold);color:var(--ink);border-color:var(--gold)}
+.tiles{grid-template-columns:repeat(4,1fr)}
+.tile h3{font-size:26px}
+@media (max-width:1100px){.sk-grid{grid-template-columns:repeat(3,1fr)}.tiles{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:900px){.xp-grid{grid-template-columns:1fr}.sk-grid,.sk-grid.three{grid-template-columns:1fr 1fr}.tiles{grid-template-columns:1fr}}
+@media (max-width:480px){.sk-grid,.sk-grid.three{grid-template-columns:1fr}}
+.xp-note{border-left:3px solid var(--gold);padding:4px 0 4px 16px;margin:0 0 20px;color:rgba(246,238,223,.85);max-width:70ch;font-size:16px}
+.xp-note b{display:block;font-size:13px;letter-spacing:.07em;text-transform:uppercase;color:var(--gold);margin-bottom:2px}
