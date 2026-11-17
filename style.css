@@ -321,3 +321,5 @@ footer p+p{margin-top:8px}
 @media (max-width:480px){.sk-grid,.sk-grid.three{grid-template-columns:1fr}}
 .xp-note{border-left:3px solid var(--gold);padding:4px 0 4px 16px;margin:0 0 20px;color:rgba(246,238,223,.85);max-width:70ch;font-size:16px}
 .xp-note b{display:block;font-size:13px;letter-spacing:.07em;text-transform:uppercase;color:var(--gold);margin-bottom:2px}
+.sk-grid.two{grid-template-columns:1fr 1fr}
+@media (max-width:700px){.sk-grid.two{grid-template-columns:1fr}}
